@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="indium.indiumxdatepicker.IndiuMXDatepicker" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>IndiuMX Datepicker</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <propertyGroup caption="Date Conditions">
+                <property key="DatePicker" type="attribute">
+                    <!-- Attribute -->
+                    <caption>Attribute (path)</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="DateTime" />
+                    </attributeTypes>
+                </property>
+                <!-- On Change Action -->
+                <property key="onChange" type="action">
+                    <caption>On Change </caption>
+                    <description></description>
+                </property>
+                <!-- Days Disable -->
+                <property key="weekDaysDisable" type="enumeration" defaultValue="None">
+                    <caption>Days To Be Disabled</caption>
+                    <description></description>
+                    <enumerationValues>
+                        <enumerationValue key="Weekend">Weekend</enumerationValue>
+                        <enumerationValue key="Weekdays">Weekdays</enumerationValue>
+                        <enumerationValue key="None">None</enumerationValue>
+                    </enumerationValues>
+                </property>
+                <!-- Dates Disable -->
+                <property key="pastFutureDays" type="enumeration" defaultValue="None">
+                    <caption>Disable Past/Future Dates</caption>
+                    <description></description>
+                    <enumerationValues>
+                        <enumerationValue key="Past">Past Dates</enumerationValue>
+                        <enumerationValue key="Future">Future Dates</enumerationValue>
+                        <enumerationValue key="None">None</enumerationValue>
+                    </enumerationValues>
+                </property>
+                <!-- Date Format -->
+                <property key="dateFormat" type="enumeration" defaultValue="Date">
+                    <caption>Date Format</caption>
+                    <description></description>
+                    <enumerationValues>
+                        <enumerationValue key="Year">YYYY-MM-DD</enumerationValue>
+                        <enumerationValue key="Date">DD-MM-YYYY</enumerationValue>
+                        <enumerationValue key="Month">MM-DD-YYYY</enumerationValue>
+                    </enumerationValues>
+                </property>
+
+                <!--  text template  -->
+                <property key="textTemp" type="textTemplate" required="false">
+                    <caption>List Of Days to be Disabled</caption>
+                    <description></description>
+
+                </property>
+                <!--  Place Holder  -->
+                <property key="placeholder" type="string" defaultValue="Please Select a Date" required="false">
+                    <caption>Placeholder</caption>
+                    <description></description>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Label">
+                <systemProperty key="Label" />
+            </propertyGroup>
+            <propertyGroup caption="Editability">
+                <systemProperty key="Editability" />
+            </propertyGroup>
+            <propertyGroup caption="Visibility">
+                <systemProperty key="Visibility" />
+            </propertyGroup>
+        </propertyGroup>
+
+    </properties>
+</widget>
